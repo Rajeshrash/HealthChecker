@@ -14,21 +14,19 @@ namespace HealthChecker.Controllers
         [HttpGet("isHealthy")]
         public Object IsHealthy()
         {
-            List<ResponseModel> responseList = new List<ResponseModel>();
             try
             {
-                bool response = HealthCheckerHelper.IsHealthy();
-                if (response)
+                if (HealthCheckerHelper.IsHealthy())
                     return new ResponseModel
                     {
-                        IsHealthy = response,
+                        IsHealthy = true,
                     };
             }
             catch(Exception e)
             {
                 //Log Exception
             }
-            return StatusCode(500);
+            return new { ResponseCode = StatusCode(500), FailedResources = Constants.ResourceList.FindAll(x => x.IsHealthy == false) };
         }
 
         [HttpGet("getValues")]

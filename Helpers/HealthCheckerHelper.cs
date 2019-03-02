@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace HealthChecker.Helpers
@@ -14,14 +15,14 @@ namespace HealthChecker.Helpers
         }
         public static bool IsHealthy()
         {
-            bool IsUnHealthy = false;
             try
             {
-                Constants.ResourceList.ForEach(x=> {
-                    if (x.IsHealthy == false)
-                        IsUnHealthy = true;
-                });
-                return IsUnHealthy == true ? false : true;
+               foreach(ResourceModel r in Constants.ResourceList)
+                {
+                    if (!r.IsHealthy)
+                        return false;
+                }
+                return true;
             }
             catch(Exception e)
             {
@@ -40,10 +41,12 @@ namespace HealthChecker.Helpers
                 {
                     SetResource("R1", HealthStatus());
                 },
-                () => {
+                () =>
+                {
                     SetResource("R2", HealthStatus());
                 },
-                () => {
+                () =>
+                {
                     SetResource("R3", HealthStatus());
                 });
             }, null, startTimeSpan, periodTimeSpan);
@@ -71,5 +74,6 @@ namespace HealthChecker.Helpers
                     x.IsHealthy = healthState;
             });
         }
+       
     }
 }
