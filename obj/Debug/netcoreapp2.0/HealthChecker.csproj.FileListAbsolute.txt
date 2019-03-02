@@ -1,0 +1,11 @@
+C:\Users\RASH-ASTRO\source\repos\HealthChecker\HealthChecker\bin\Debug\netcoreapp2.0\HealthChecker.deps.json
+C:\Users\RASH-ASTRO\source\repos\HealthChecker\HealthChecker\bin\Debug\netcoreapp2.0\HealthChecker.runtimeconfig.json
+C:\Users\RASH-ASTRO\source\repos\HealthChecker\HealthChecker\bin\Debug\netcoreapp2.0\HealthChecker.runtimeconfig.dev.json
+C:\Users\RASH-ASTRO\source\repos\HealthChecker\HealthChecker\bin\Debug\netcoreapp2.0\HealthChecker.dll
+C:\Users\RASH-ASTRO\source\repos\HealthChecker\HealthChecker\obj\Debug\netcoreapp2.0\HealthChecker.csprojResolveAssemblyReference.cache
+C:\Users\RASH-ASTRO\source\repos\HealthChecker\HealthChecker\obj\Debug\netcoreapp2.0\HealthChecker.csproj.CoreCompileInputs.cache
+C:\Users\RASH-ASTRO\source\repos\HealthChecker\HealthChecker\obj\Debug\netcoreapp2.0\HealthChecker.AssemblyInfoInputs.cache
+C:\Users\RASH-ASTRO\source\repos\HealthChecker\HealthChecker\obj\Debug\netcoreapp2.0\HealthChecker.AssemblyInfo.cs
+C:\Users\RASH-ASTRO\source\repos\HealthChecker\HealthChecker\bin\Debug\netcoreapp2.0\HealthChecker.pdb
+C:\Users\RASH-ASTRO\source\repos\HealthChecker\HealthChecker\obj\Debug\netcoreapp2.0\HealthChecker.dll
+C:\Users\RASH-ASTRO\source\repos\HealthChecker\HealthChecker\obj\Debug\netcoreapp2.0\HealthChecker.pdb
